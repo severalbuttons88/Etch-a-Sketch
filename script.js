@@ -40,8 +40,13 @@ function updateOnHover(gridToUpdate) {
     });
 }
 function gridUserUpdate() {
-    let userInput = prompt("Enter the size of the notepad you want: ", "16")
-    parseInt(userInput);
+    let userInput = prompt("Enter the size of the notepad you want: ", "16");
+    parseInt(userInput, 10);
+    if (userInput === "16") {
+        userInput = 16;
+    }
+    console.log(userInput);
+    console.log(typeof userInput);
     if (userInput >= 100) {
         userInput = 100;
     } else if (userInput <= 4) {
@@ -52,6 +57,9 @@ function gridUserUpdate() {
     }
 
     createGrid(userInput);
+}
+function changeGridSizeButton() {
+
 }
 gridUserUpdate();
 

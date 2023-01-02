@@ -22,10 +22,20 @@
     height:100vh;
     align-content: center;
     justify-content: center;
+    gap:30px;
 }
 .grid-default-color {
     background-color:white;
 }
 .grid-hover {
     background-color:black;
+}
+.button-wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grid-size-button {
+    height:40px;
+    width: 100px;
 }
