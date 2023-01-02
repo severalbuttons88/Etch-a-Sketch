@@ -1,0 +1,23 @@
+#container {
+    display:grid;
+    width: 100px;
+    height: 100px;
+
+}
+.grid {
+    background-color:white;
+    border:1px solid black;
+
+}
+#flex-container {
+    width: 300px;
+    height: 300px;
+    align-self:center;
+}
+#wrapper {
+    display:flex;
+    width:100vw;
+    height:100vh;
+    align-content: center;
+    justify-content: center;
+}
