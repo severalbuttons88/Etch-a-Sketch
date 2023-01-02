@@ -44,9 +44,7 @@ function updateOnHover(gridToUpdate) {
 function gridUserUpdate() {
     let userInput = prompt("Enter the size of the notepad you want: ", "16");
     userInput = Number(userInput);
-    if (userInput === "16") {
-        userInput = 16;
-    }
+
     console.log(userInput);
     console.log(typeof userInput);
     if (userInput >= 100) {
