@@ -24,4 +24,4 @@ gridArea(height, width);
   }
   
 }
-createGrid(6);
+createGrid(16);

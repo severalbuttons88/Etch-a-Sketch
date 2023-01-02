@@ -1,7 +1,7 @@
 #container {
     display:grid;
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 500px;
 
 }
 .grid {
@@ -10,9 +10,11 @@
 
 }
 #flex-container {
-    width: 300px;
-    height: 300px;
+    display:flex;
+    width: 700px;    /* changes the size of grid*/
+    height: 700px;
     align-self:center;
+    background-color:green;
 }
 #wrapper {
     display:flex;
