@@ -13,7 +13,8 @@
     width: 700px;    /* changes the size of grid*/
     height: 700px;
     align-self:center;
-    background-color:green;
+    border: 30px ridge black;
+    background-image: radial-gradient(circle, #925f7c, #c36676, #e5775b, #eb9934, #d1c300, #a2dd4f, #6cf090, #00ffd1, #38faff, #99f1ff, #d4e8ff, #e7e7e7);
 }
 #wrapper {
     display:flex;

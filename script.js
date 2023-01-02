@@ -39,4 +39,19 @@ function updateOnHover(gridToUpdate) {
 
     });
 }
-createGrid(20);
+function gridUserUpdate() {
+    let userInput = prompt("Enter the size of the notepad you want: ", "16")
+    parseInt(userInput);
+    if (userInput >= 100) {
+        userInput = 100;
+    } else if (userInput <= 4) {
+        userInput = 4;
+    } else if (typeof userInput != 'number') {
+        userInput = prompt("Invalid input, please enter a number, ex (16): ");
+        parseInt(userInput);
+    }
+
+    createGrid(userInput);
+}
+gridUserUpdate();
+
