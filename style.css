@@ -5,7 +5,6 @@
 
 }
 .grid {
-    background-color:white;
     border:1px solid black;
 
 }
@@ -22,4 +21,10 @@
     height:100vh;
     align-content: center;
     justify-content: center;
+}
+.grid-default-color {
+    background-color:white;
+}
+.grid-hover {
+    background-color:black;
 }
