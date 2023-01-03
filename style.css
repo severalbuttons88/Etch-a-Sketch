@@ -44,3 +44,7 @@ body {
     height:40px;
     width: 100px;
 }
+#size-storage {
+    display:none;
+    z-index: -1;
+}
