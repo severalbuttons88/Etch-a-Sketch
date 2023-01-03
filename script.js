@@ -1,5 +1,7 @@
+let gridSizeStorage = 16;
 const container = document.querySelector("#container");
 const gridBtn = document.querySelector("#grid-Button");
+const clearBtn = document.querySelector("#clear-Grid-Button");
 const flexContainer = document.querySelector("#flex-container");
 const flexContainerStyle = window.getComputedStyle(flexContainer);
 const flexContainerWidth = parseInt(
@@ -44,6 +46,7 @@ function updateOnHover(gridToUpdate) {
 function gridUserUpdate() {
     let userInput = prompt("Enter the size of the notepad you want: ", "16");
     userInput = Number(userInput);
+    
 
     console.log(userInput);
     console.log(typeof userInput);
@@ -51,22 +54,33 @@ function gridUserUpdate() {
         userInput = 100;
     } else if (userInput <= 4) {
         userInput = 4;
-    } else if (typeof userInput != 'number') {
+    } else if (typeof userInput != "number") {
         userInput = prompt("Invalid input, please enter a number, ex (16): ");
         parseInt(userInput);
     }
+    gridSizeStorage = userInput;
 
     createGrid(userInput);
 }
 function changeGridSizeButton() {
-    gridBtn.addEventListener('click', () => {
+    gridBtn.addEventListener("click", () => {
         clearGrid();
         gridUserUpdate();
     });
 }
+function gridUserClear(gridCurrentSize) {
+    gridCurrentSize = gridSizeStorage;
+    clearBtn.addEventListener("click", () => {
+        clearGrid();
+        createGrid(gridCurrentSize);
+        console.log(gridCurrentSize);
+    });
+}
 function startupPage() {
     gridUserUpdate();
+    gridUserClear();
     changeGridSizeButton();
+    gridUserClear(gridSizeStorage);
 
 }
 function clearGrid() {

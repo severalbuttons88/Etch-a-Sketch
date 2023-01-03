@@ -3,6 +3,10 @@
     width: 500px;
     height: 500px;
 
+
+}
+body {
+    background-image: url("./pexels-tirachard-kumtanom-450055.jpg");
 }
 .grid {
     border:1px solid black;
@@ -34,8 +38,9 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
 }
-.grid-size-button {
+.btn {
     height:40px;
     width: 100px;
 }
